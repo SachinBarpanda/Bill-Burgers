@@ -31,6 +31,7 @@ public class Hamburger {
     }
 
     public void addTomato(String name,double price){
+ 
         tomato=name;
         tomatoPrice=price;
     }
@@ -65,6 +66,7 @@ public class Hamburger {
             raddisPrice+=HamburgerCost;
             System.out.println("Total cost of hamburger after adding Raddis"+raddisPrice);
         }
+
     }
 
 
