@@ -1,10 +1,10 @@
 package com.sachin;
 
 public class Hamburger {
-    private String name;
+    public String name;
     private String breadroll;
     private String meat;
-    private double price;
+    public double price;
 
     private String lettuce;
     private double lettucePrice;
@@ -31,7 +31,6 @@ public class Hamburger {
     }
 
     public void addTomato(String name,double price){
- 
         tomato=name;
         tomatoPrice=price;
     }
@@ -43,7 +42,7 @@ public class Hamburger {
         raddis=name;
         raddisPrice=price;
     }
-    public void callmeanytime(){
+    public double callmeanytime(){
         double HamburgerCost=this.price;
         System.out.println("The "+this.name+"burger cost "+HamburgerCost);
 
@@ -66,7 +65,7 @@ public class Hamburger {
             raddisPrice+=HamburgerCost;
             System.out.println("Total cost of hamburger after adding Raddis"+raddisPrice);
         }
-
+        return HamburgerCost;
     }
 
 
